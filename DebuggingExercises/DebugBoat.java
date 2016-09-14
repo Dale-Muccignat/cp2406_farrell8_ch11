@@ -1,12 +1,14 @@
 public abstract class DebugBoat
 {
-   String boatType = new String();
+   String boatType;
    int passengers;
-   String power = new String();
+   String power;
+
    public DebugBoat(String bt)
    {
       boatType = bt;
    }
+
    // override equals() method to satisfy
    // requirements of Debug Exercise 3.
    public boolean equals(DebugBoat otherBoat)
@@ -18,11 +20,13 @@ public abstract class DebugBoat
          result = false;
       return result;
    }
+
    public String toString()
    {
       return("This " + boatType + "boat carries " + passengers +
         " and is powered by " + power);
    }
+
    public abstract void setPower();
    public abstract void setPassengers();
 }
