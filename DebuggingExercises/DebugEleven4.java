@@ -3,7 +3,8 @@
 import javax.swing.*;
 public class DebugEleven4
 {
-   static DebugBoat[] boatArray = new DebugBoat[5];
+   private static DebugBoat[] boatArray = new DebugBoat[5];
+
    public static void main(String[] args)
    {
       buildArray();

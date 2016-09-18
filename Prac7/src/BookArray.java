@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.lang.reflect.Array;
 
 /**
  * Created by Dale on 14/09/2016.
@@ -13,8 +12,9 @@ public class BookArray {
    }
 
    private static void displayArray() {
-      for (int x=0; x<array.length;x++){
-         System.out.println("The Book: " + array[x].getTitle() + " costs: " + array[x].getPrice());
+
+      for (Book book : array){//int x=0; x<array.length;x++){
+         System.out.println("The Book: " + book.getTitle() + " costs: " + book.getPrice());
       }
    }
 

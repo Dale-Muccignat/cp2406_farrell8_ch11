@@ -4,10 +4,10 @@ public class DebugEleven2
 {
     public static void main(String[] args)
         {
+            DebugBoat[] ref = new DebugBoat[3];
             DebugRowboat blueBoat = new DebugRowboat();
             DebugRowboat redBoat = new DebugRowboat();
             DebugOceanLiner bigBoat = new DebugOceanLiner();
-            DebugBoat[] ref = new DebugBoat[3];
             ref[0] = redBoat;
             ref[1] = blueBoat;
             ref[2] = bigBoat;
