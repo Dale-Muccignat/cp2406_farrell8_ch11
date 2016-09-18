@@ -1,5 +1,23 @@
 /**
- * Created by Dale on 14/09/2016.
+ * Created by Dale Muccignat on 14/09/2016.
  */
-public class Book {
+public abstract class Book {
+   protected String title;
+   protected Double price;
+
+   public Book(){}
+
+   public Book(String title) {
+      this.title = title;
+   }
+
+   public String getTitle() {
+      return title;
+   }
+
+   public Double getPrice() {
+      return price;
+   }
+
+   public abstract void setPrice();
 }
