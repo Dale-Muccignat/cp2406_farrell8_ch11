@@ -9,6 +9,7 @@ public abstract class Book {
 
    public Book(String title) {
       this.title = title;
+      System.out.println("blah");
    }
 
    public String getTitle() {
